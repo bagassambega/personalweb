@@ -12,14 +12,14 @@
 
 body
 {
-    background:  linear-gradient(-30deg, #33ccff,#81d5ff ,#ffccff,#81d5ff);  
+    background:  linear-gradient(-30deg, #4588DE, #33ccff,#81d5ff,#81d5ff, #5095E4);  
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 
-body::before
+body::before    
 {
     content: '';
     position: absolute; 
@@ -78,8 +78,11 @@ body::after
 {
     width: 90%; 
     height: 85vh;
-    background: rgba(255,255,255,.4);
-    backdrop-filter: blur(5px);
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 1.5px );
+-webkit-backdrop-filter: blur( 1.5px );
+border-radius: 10px;
 }
 
 .container .navbar
@@ -195,8 +198,8 @@ body::after
 
 .navitem .icons ul li .fa:hover
 {
-    transform: scale(1.2) rotate(360deg);
-    color: #33cc33;
+    transform: scale(1.1);
+    color: #000000;
     background: transparent
 }
 
@@ -219,7 +222,7 @@ body::after
     font-weight: 700;
 }
 
-.navitem .account .username
+.navitem .account .username a
 {
     position: absolute;
     top: 18px;
